@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Sprinter Game</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
+  <body>
+    <h1>Welcome to the Sprinter Game</h1>
+    <div id="flash-container"></div>
+    <script>
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("flash-container").appendChild(player);
+      player.load("Sprinter/sprinter.swf");
+    </script>
+  </body>
+</html>
